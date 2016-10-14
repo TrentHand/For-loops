@@ -13,7 +13,7 @@ for (var increment = 5; increment < 120; increment += 10) {
 // iteration of presidents
 
 var presidents = [
-
+"",
 "George Washington",
 "John Adams",
 "Thomas Jefferson",
@@ -64,12 +64,11 @@ var presidents = [
 
 var presidentsList;
 
-for (var i = 0; i<presidents.length; i++) {
-	presidentsList = "President # " + presidents[i];
+for (var i = 1; i<presidents.length; i++) {
+	presidentsList = "President # " + i + " " + presidents[i];
 	console.log(presidentsList);
 }
 
-// can't get the number counter to work on the console
 
 
 // iteration #2
@@ -88,7 +87,8 @@ var antSpecies = {
   jackJumper: {}
 }
 
-  for (var i = 0; i < antSpecies.length; i++) {
-  	var printout = antSpecies[i];
-  	console.log(printout);
+  for (index in antSpecies) {
+  console.log(index);
   }
+
+  // can't get these to print to the console
